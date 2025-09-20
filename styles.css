@@ -1,1 +1,42 @@
 /*  your css code here. If applicable */
+/* Root pseudo-class for background color */
+:root {
+  background-color: rgb(135, 206, 235);
+}
+
+/* Paragraph styling */
+article p:first-child {
+  color: white;
+  background-color: black;
+}
+
+article p:nth-child(2) {
+  color: inherit; /* standard text color */
+}
+
+article p:last-child {
+  color: red;
+}
+
+/* List styling */
+ul li {
+  background-color: gray;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Odd items white background */
+ul li:nth-child(odd) {
+  background-color: white;
+}
+
+/* First and last items font size */
+ul li:first-child,
+ul li:last-child {
+  font-size: 22px;
+}
+
+/* Third-to-last item pink background */
+ul li:nth-last-child(3) {
+  background-color: pink;
+}
